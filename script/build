@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -o xtrace
+
+mkdir -p out
+
+docker run \
+  --volume=$(pwd):/input:rw \
+  image \
+  make TMP=/tmp INPUT=/input OUTPUT=/input/out

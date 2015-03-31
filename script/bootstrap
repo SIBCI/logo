@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -o errexit
+
+bundle install --path vendor/bundle
+docker build --tag image .
