@@ -2,10 +2,10 @@ TMP = .
 OUTPUT = .
 INPUT = .
 
-objects = logo_horizontal_dark.png \
-	  logo_horizontal_light.png \
-	  logo_vertical_light.png \
-	  logo_vertical_dark.png
+objects = $(OUTPUT)/logo_horizontal_dark.png \
+	  $(OUTPUT)/logo_horizontal_light.png \
+	  $(OUTPUT)/logo_vertical_light.png \
+	  $(OUTPUT)/logo_vertical_dark.png
 
 all: $(objects)
 
