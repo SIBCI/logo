@@ -1,0 +1,9 @@
+## 0.1.1
+
+Remove small edge in dark versions where background did go all the way to the
+edge.
+
+## 0.1.0
+
+Convert the project to use docker image containing tools required to make the
+logo images. This will allow anyone to edit the logo and produce a new version.
