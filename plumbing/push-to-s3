@@ -35,8 +35,7 @@ versions = Set.new directory.
 exists = versions.include?(version)
 
 if exists
-  STDERR.puts "Can't deploy, this version already exists: #{version}".colorize(:red)
-  exit 1
+  STDERR.puts "Skipping deploy, this version already exists: #{version}".colorize(:red)
 else
   files.each do |file|
     dst = file.gsub("out", "logo/" + version)

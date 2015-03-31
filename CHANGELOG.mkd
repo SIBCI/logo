@@ -1,3 +1,8 @@
+## 0.2.0
+
+Generate logos without any text, and generate a favicon.ico for use in html
+headers.
+
 ## 0.1.1
 
 Remove small edge in dark versions where background did go all the way to the
