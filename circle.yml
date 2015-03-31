@@ -2,6 +2,8 @@
 machine:
   services:
     - docker
+  ruby:
+    version: 2.2.0
 
 dependencies:
   override:
@@ -10,3 +12,10 @@ dependencies:
 test:
   override:
     - ./script/build
+
+deployment:
+  deploy:
+    branch: master
+    owner: bioboxes
+    commands:
+      - ./script/deploy
