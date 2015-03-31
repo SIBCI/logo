@@ -7,4 +7,4 @@ mkdir -p out
 docker run \
   --volume=$(pwd):/input:rw \
   image \
-  make TMP=/input/tmp INPUT=/input OUTPUT=/input/out
+  make TMP=/tmp INPUT=/input OUTPUT=/input/out
